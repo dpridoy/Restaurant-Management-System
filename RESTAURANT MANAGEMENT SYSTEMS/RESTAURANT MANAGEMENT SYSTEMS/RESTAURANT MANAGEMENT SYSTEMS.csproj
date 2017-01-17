@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98178F70-B293-4B5D-A455-D91A43917325}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RESTAURANT_MANAGEMENT_SYSTEMS</RootNamespace>
+    <AssemblyName>RESTAURANT MANAGEMENT SYSTEMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILL INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILL INFO.Designer.cs">
+      <DependentUpon>BILL INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DATADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FOOD PRICE LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOOD PRICE LIST.Designer.cs">
+      <DependentUpon>FOOD PRICE LIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOOD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOOD.Designer.cs">
+      <DependentUpon>FOOD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROCESS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROCESS.Designer.cs">
+      <DependentUpon>PROCESS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STAFFINFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STAFFINFO.Designer.cs">
+      <DependentUpon>STAFFINFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="START FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="START FORM.Designer.cs">
+      <DependentUpon>START FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN FORM.Designer.cs">
+      <DependentUpon>LOGIN FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEMBER.Designer.cs">
+      <DependentUpon>MEMBER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEMBERS.Designer.cs">
+      <DependentUpon>MEMBERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBERSHIP DETAILS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEMBERSHIP DETAILS.Designer.cs">
+      <DependentUpon>MEMBERSHIP DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIEW RESTAURANT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW RESTAURANT.Designer.cs">
+      <DependentUpon>VIEW RESTAURANT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILL INFO.resx">
+      <DependentUpon>BILL INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOOD PRICE LIST.resx">
+      <DependentUpon>FOOD PRICE LIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOOD.resx">
+      <DependentUpon>FOOD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROCESS.resx">
+      <DependentUpon>PROCESS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STAFFINFO.resx">
+      <DependentUpon>STAFFINFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="START FORM.resx">
+      <DependentUpon>START FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN FORM.resx">
+      <DependentUpon>LOGIN FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEMBER.resx">
+      <DependentUpon>MEMBER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEMBERS.resx">
+      <DependentUpon>MEMBERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEMBERSHIP DETAILS.resx">
+      <DependentUpon>MEMBERSHIP DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VIEW RESTAURANT.resx">
+      <DependentUpon>VIEW RESTAURANT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DATADataSet.xsc">
+      <DependentUpon>DATADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DATADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DATADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DATADataSet.xss">
+      <DependentUpon>DATADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DATABASE\DATABASE.Dal.csproj">
+      <Project>{420bbfe1-980e-4b31-92e9-9a78ffda31ad}</Project>
+      <Name>DATABASE.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTITY\ENTITY.bll.csproj">
+      <Project>{c781c235-b554-42fa-8e4a-eca917474e54}</Project>
+      <Name>ENTITY.bll</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-office-manager-at-the-workplace-flat-design-vector-eps-235199998.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetWidth1300-Kempinski-Beijing-Kranzlers-Restaurant--Bar.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
